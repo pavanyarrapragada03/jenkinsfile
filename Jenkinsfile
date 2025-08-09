@@ -4,14 +4,18 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // Your commands go here
                 sh 'echo "This is a build step"'
             }
         }
         stage('Test') {
             steps {
-                // Your test commands go here
+                sh 'echo "This is a test step"'
             }
+        }
+    }
+    post {
+        always {
+            echo 'Pipeline completed.'
         }
     }
 }
