@@ -1,6 +1,17 @@
-stage('Build') {
-    steps {
-        echo 'Building the application...'
-        sh "docker build -t ${DOCKER_IMAGE} ."
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                // Your commands go here
+                sh 'echo "This is a build step"'
+            }
+        }
+        stage('Test') {
+            steps {
+                // Your test commands go here
+            }
+        }
     }
 }
