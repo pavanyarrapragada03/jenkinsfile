@@ -1,1 +1,1 @@
-# Jenkinsfile
+This task shows how to set up a basic Jenkins pipeline to automate building and deploying an application. Using Jenkins and Docker, the pipeline starts on every code commit and goes through stages like build, test, and deploy. The process is outlined in a Jenkinsfile kept in the project repository. This setup ensures smooth and repeatable deployments.
